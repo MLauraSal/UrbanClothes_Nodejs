@@ -31,7 +31,7 @@ async function main() {
       // Lista todos los productos
       await request(`${BASE_URL}/products`);
     } else {
-      // Obtiene un producto por ID
+      // Obtener un producto por ID
       const id = parseInt(parts[1]);
       if (isNaN(id) || id <= 0) {
         console.log(" ID inválido. Uso: npm run start GET products/<id>");
